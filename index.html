@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="main flex">
+            <h1>BOOK LIST</h1> 
+            <P class="text">BOOK NAME:</P>
+            <input id="input-book-name" class="input" placeholder="Enter Book Name" type="text">
+            <p class="text">ISBN:</p>
+            <input id="input-isbn" class="input" placeholder="Enter ISBN" type="text">
+            <button id="btn-submit">SUBMIT</button>
+            <div id="book-list" class="flex">
+                <div id="book-name" class="same"></div>
+                <div id="isbn" class="same">
+                    <button class="btn-delete">X</button>
+                    <button class="btn-update">UPDATE</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
