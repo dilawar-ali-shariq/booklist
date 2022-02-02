@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9c6e4a89e4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container flex">
-        <div class="main flex">
-            <h1>BOOK LIST</h1> 
-            <P class="text">BOOK NAME:</P>
-            <input id="input-book-name" class="input" placeholder="Enter Book Name" type="text">
-            <p class="text">ISBN:</p>
-            <input id="input-isbn" class="input" placeholder="Enter ISBN" type="text">
-            <button id="btn-submit">SUBMIT</button>
-            <div id="book-list" class="flex">
-                <div id="book-name" class="same"></div>
-                <div id="isbn" class="same">
-                    <button class="btn-delete">X</button>
-                    <button class="btn-update">UPDATE</button>
+    <div id="back-drop">
+        <div id="update-box">
+            <input id="update-list" type="text">
+            <button id="update-btn">CONFIRM</button>
+        </div>
+    </div>
+    <div id="container" class="flex">
+        <div id="main">
+            <div id="upper"></div>
+            <div id="lower" class="flex">
+                <div id="add-list">
+                    <p><b>New Todo:</b></p>
+                    <input id="input-add" placeholder="Enter Todo Here" type="text"><button id="add-btn"><p>Add</p></button>
                 </div>
-            </div>    
+                <div id="list">
+                    <div id="wrapper">
+                        <div id="text"></div>
+                        <div class="edit flex"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="delete flex"><i class="fas fa-trash-alt"></i></div>
+                    </div>    
+                </div>
+            </div>
         </div>
     </div>
     <script src="./app.js"></script>
