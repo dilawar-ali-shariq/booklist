@@ -182,3 +182,22 @@ p{
 #update-btn:hover{
     opacity: 0.7;
 }
+
+@media only screen and (max-width: 420px){
+    #add-list{
+        width: 25rem;
+    }
+
+    #input-add{
+        width: 17rem;
+    }
+
+    #list{
+        width: 25rem;
+    }
+
+    #text{
+        min-width: 17rem;
+    }
+
+}
