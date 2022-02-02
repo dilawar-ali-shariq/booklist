@@ -20,14 +20,13 @@ p{
     background-image: url("./image1.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
     font-family: 'Roboto', sans-serif;
 }
 
 #main{
     width: 80rem;
     height: 50rem;
-    border: 0.1rem solid gray;
+    box-shadow: 0 0 0 0 gray,-0.2rem -0.2rem 1.5rem 0.5rem gray,0 2rem 2.5rem -0.8rem gray;
     margin: 2rem;
     border-radius: 1rem;
 }
@@ -39,7 +38,7 @@ p{
 }
 
 #lower{
-    height: 34.8rem;
+    height: 35rem;
     background-color: white;
     flex-flow: column;
     border-radius: 0 0 1rem 1rem;
@@ -48,16 +47,16 @@ p{
 #add-list{
     width: 35rem;
     border-radius: 0.5rem;
-    border: 0.1rem solid gray;
-    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem gray;
+    padding: 1.5rem;
     position: relative;
-    top: -7rem;
+    top: -8rem;
     background-color: white;
     margin: 0 1rem;
 }
 
 #input-add{
-    width: 27rem;
+    width: 26rem;
     margin: 1rem 1rem 0.5rem 0;
     padding: 0.5rem;
     border: 0.1rem solid gray;
@@ -80,11 +79,11 @@ p{
 #list{
     display: block;
     width: 35rem;
-    border-radius: 0.5rem;
-    height: 22rem;
+    border-radius: 0.2rem;
+    height: 20rem;
     border: 0.1rem solid gray;
     position: relative;
-    top: -2rem;
+    top: -3rem;
     overflow-y: scroll;
     margin: 0 1rem;
 }
@@ -103,14 +102,13 @@ p{
     white-space: nowrap;
     overflow: hidden;
     padding: 0.5rem;
-    min-width: 25rem;
+    min-width: 26rem;
 }
 
 .edit{
-    min-width: 2rem;
+    min-width: 3rem;
     padding: 0.5rem;
     color: #FF33AE;
-    margin: 0 1rem;
     cursor: pointer;
     border-radius: 0.2rem;
 }
@@ -120,7 +118,7 @@ p{
 }
 
 .delete{
-    min-width: 2rem;
+    min-width: 3rem;
     padding: 0.5rem;
     color: #FF33AE;
     cursor: pointer;
@@ -164,7 +162,7 @@ p{
 
 #update-list{
     width: 27rem;
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
     padding: 0.5rem;
     border: 0.1rem solid gray;
     border-radius: 0.5rem;
@@ -200,4 +198,11 @@ p{
         min-width: 17rem;
     }
 
+    #update-box{
+        width: 25rem;
+    }
+
+    #update-list{
+        width: 17rem;
+    }
 }
