@@ -7,6 +7,7 @@ var addBtn = document.getElementById("add-btn");
 var backDrop = document.getElementById("back-drop");
 var updateList = document.getElementById("update-list");
 var updateBtn = document.getElementById("update-btn");
+var clearBtn = document.getElementById("clear-btn");
 var Index = 0;
 
 addBtn.addEventListener("click", (e) => {
@@ -32,6 +33,10 @@ function Update(index, value){
     arrayOfTodo[index] = value;
 }
 
+clearBtn.addEventListener("click", (e) => {
+    backDrop.style.display = "none";
+    createUI();
+})
 
 function Delete(index) { 
     let newArray1 = [];

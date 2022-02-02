@@ -169,12 +169,28 @@ p{
 }
 
 #update-btn{
+    margin: 0 1rem 0 0;
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
     background-color: #FF33AE;
     color: white;
     font-size: 1.2rem;
+
+}
+
+#clear-btn{
+    margin: 0 0 0 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #FF33AE;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#clear-btn:hover{
+    opacity: 0.7;
 }
 
 #update-btn:hover{
@@ -203,6 +219,6 @@ p{
     }
 
     #update-list{
-        width: 17rem;
+        width: 18rem;
     }
 }
